@@ -31,6 +31,36 @@
         <input type="radio" name="gender" id="gender" />
         Female
       </div>
+      <div>
+        <label for="country">select country: </label>
+        <select name="country" id="country">
+          <!-- <option value="">--Pasirinkite miesta</option> -->
+          <option for="country">Lithuania</option>
+          <option for="country">Italy</option>
+          <option for="country">Grece</option>
+          <option for="country">Germany</option>
+        </select>
+      </div>
+      <div>
+        <label for="hobby">Hobby: </label>
+        <label for="basketball">Basketball</label>
+        <input type="checkbox" name="hobby" id="basketball" />
+        <label for="football">Football</label>
+        <input type="checkbox" name="hobby" id="basketball" />
+      </div>
+      <div>
+        <label for="Adress">Adress: </label>
+
+        <textarea
+          id="Adress"
+          name="Adress"
+          rows="10"
+          cols="21"
+          placeholder="Write your adress here"
+          disabled
+        ></textarea>
+      </div>
+      <button type="submit" value="button" name="button">Submit</button>
     </form>
   </body>
 </html>

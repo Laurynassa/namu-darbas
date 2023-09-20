@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h2>Pristatymo adresai</h2>
+      <div>Pirkėjas Gavėjas</div>
+      <div>
+        <label for="name">Vardas</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="surname">Pavardė</label>
+        <input type="text" name="surname" id="surname" />
+      </div>
+      <div>
+        <label for="phone_number">Telefonas</label>
+        <input
+          type="tel"
+          name="phone_number"
+          id="phone_number"
+          pattern="[+][370]{3}[0-9]{3}[0-9]{5}"
+        />
+        <span id="phone_number_error" style="display: none"
+          >Jei norite gauti informaciją apie užsakymo vykdymo eigą SMS žinute,
+          prašome įvesti lietuvišką tel. nr. (pvz., +370...)</span
+        >
+      </div>
+      <div>
+        <label for="firm">Įmonės pavadinimas</label>
+        <input type="text" name="firm" id="firm" />
+      </div>
+      <div>
+        <label for="country">Miestas:</label>
+        <select name="country" id="country">
+          <option for="country">Lithuania</option>
+          <option for="country">Denmark</option>
+          <option for="country">Netherlands</option>
+          <option for="country">Spain</option>
+        </select>
+      </div>
+      <div>
+        <label for="adress">Adresas</label>
+        <input type="text" name="adress" id="adress" />
+      </div>
+      <div>
+        <label for="adress">Pašto kodas (tik skaičiai)</label>
+      </div>
+      <div>
+        <input type="number" name="adress" id="adress" maxlength="5" min="0" />
+      </div>
+      <div>
+        <button type="submit">Atšaukti</button>
+        <button>Išsaugoti pakeitimus</button>
+      </div>
+    </form>
+  </body>
+</html>
